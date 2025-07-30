@@ -63,8 +63,8 @@ class SpeechTranslator:
         
         # Advanced settings for better detection
         self.min_speech_duration = 0.5  # Minimum speech duration
-        self.max_speech_duration = 15.0  # Maximum speech duration before forced stop
-        self.silence_threshold = 0.7     # Consecutive silence periods to end
+        self.max_speech_duration = 30.0  # Maximum speech duration before forced stop
+        self.silence_threshold = 1.0     # Consecutive silence periods to end
         
         # Get available microphones
         self.microphones = sr.Microphone.list_microphone_names()
