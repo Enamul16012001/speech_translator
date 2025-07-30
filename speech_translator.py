@@ -41,7 +41,7 @@ class SpeechTranslator:
         """Configure Gemini AI for translation"""
         try:
             genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel('gemini-2.0-flash-exp')
+            self.model = genai.GenerativeModel('gemini-2.0-flash')
             logger.info("Gemini AI configured successfully")
         except Exception as e:
             logger.error(f"Error configuring Gemini AI: {e}")
